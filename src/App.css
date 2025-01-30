@@ -1,0 +1,160 @@
+/* -------- PROPRIÉTÉS COMMUNES -------- */
+
+/* Corps de la page */
+body{
+    /* Fond et contour */
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+
+/* Titres et sous-titres */
+h1, h2{
+    /* Centrage */
+    text-align: center;
+}
+
+/* Header et Footer */
+header, footer{
+    /* Fond et contour */
+    background-color: rgb(0, 100, 200);
+    border: 1px solid transparent;
+
+    /* Texte */
+    text-align: center;
+}
+
+/* Main */
+main{
+    /* Position des éléments internes */
+    display: flex;
+    justify-content: center;
+}
+
+/* Div du composant FAQ */
+#div_composant_FAQ{
+   /* Position des éléments internes */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Liste */
+ul{
+   /* Suppression des puces */
+   list-style: none;
+
+   /* Espace interne */
+   padding: 0;
+
+   /* Position des éléments internes */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Groupes question-bouton-réponse */
+li{
+    /* Fond et contour */
+    background-color: rgb(0, 120, 180);
+    border-radius: 10px;
+
+    /* Espace interne */
+    padding: 4px;
+
+    /* Espace externe */
+    margin: 10px 20px;
+
+    /* Centrage du texte */
+    text-align: center;
+}
+
+/* Boutons */
+button{
+    /* Souris */
+    cursor: pointer;
+
+    /* Espace externe */
+    margin-left: 10px;
+
+    /* Fond et contour */
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+    /* Texte */
+    color: rgb(220, 220, 220);
+}
+
+/* Réponses */
+span{
+    /* Dimensions */
+    max-width: 400px;
+    display: inline-block;
+}
+
+/* -------- RESPONSIVE -------- */
+
+/* VERSION TRÈS PETITE */
+@media all and (max-width: 344px)
+{
+    /* Questions et boutons */
+    li{
+        /* Dimensions */
+        width: 80%;
+    }
+
+    /* FAQ */
+    li, span{
+        /* Taille du texte */
+        font-size: 20px;
+    }   
+}
+
+/* VERSION PETITE */
+@media all and (min-width: 345px) and (max-width: 540px)
+{
+    /* Questions et boutons */
+    li{
+        /* Dimensions */
+        width: 80%;
+    }
+    
+    /* FAQ */
+    li, span{
+        /* Taille du texte */
+        font-size: 22px;
+    }
+}
+
+/* VERSION MOYENNE */
+@media all and (min-width: 541px) and (max-width: 912px)
+{
+    /* Questions et boutons */
+    li{
+        /* Dimensions */
+        width: 60%;
+    }
+
+    /* FAQ */
+    li, span{
+        /* Taille du texte */
+        font-size: 26px;
+    }
+}
+
+/* VERSION GRANDE */
+@media all and (min-width: 913px)
+{
+    /* Questions et boutons */
+    li{
+        /* Dimensions */
+        width: 95%;
+    }
+
+    /* FAQ */
+    li, span{
+        /* Taille du texte */
+        font-size: 22px;
+    }
+}
